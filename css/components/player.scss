@@ -1,0 +1,236 @@
+.player-section {
+    background-color: #f8faf9;
+    min-height: 44.4444444444rem;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    &::before {
+      content: url("../img/decor/berries-left.png");
+      position: absolute;
+      top: rem(-160px);
+      left: 0;
+  
+      @include phones {
+        left: rem(-40px);
+      }
+    }
+}
+
+.player-section__container {
+  position: relative;
+   max-width: 650px;
+   margin: auto;
+}
+
+.player {
+  position: relative;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  width: 100%;
+  height: 406px;
+  
+  @include tablets {
+    width: 95%;
+  }
+
+  @include phones {
+    max-height: 295px;
+  }
+
+}
+
+.player__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+  
+.player__splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.player__splash img {
+  width: 100%;
+  height: 90%;
+}
+
+.active .player__splash {
+  display: none;
+}
+
+/*
+  &.active .player__splash {
+    display: none;
+  }
+
+  &.paused {
+    .player__start {
+      width: 14px;
+      height: 22px;
+      border: none;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 5px;
+        top: 0;
+        bottom: 0;
+        background: #626262;
+      }
+
+      &::after {
+        right: 0;
+      }
+
+      &::before {
+        left: 0;
+      }
+    }
+  }
+}
+@include
+*/
+.player__controls {
+  display: flex;
+  flex-direction: row;
+  background: #404040;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  z-index: 5;
+
+  @include phones {
+    justify-content: space-between;
+  }
+}
+
+.player__playback {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  position: relative;
+  margin-right: 15px;
+  @include phones {
+    width: 35%;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    display: block;
+    background: #626262;
+  }
+}
+
+.player__start {
+  width: 55px;
+  height: 100%;
+  border: none;
+  background: url("./img/icons/play.svg") no-repeat;
+  background-position: center;
+  margin-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.player__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player__volume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+  background: url("./img/icons/volume.svg") no-repeat;
+  @include phones {
+    width: 33%;
+  }
+}
+/*
+.player__start {
+  width: 55px;
+  height: 100%;
+  border: none;
+  background: url("./img/icons/play.svg") no-repeat;
+  background-position: center;
+  margin-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+*/
+.volume__pic {
+  border: none;
+}
+
+.volume__icon {
+  width: 40px;
+  height: 20px;
+  fill: #626262;
+}
+
+.volume__playback {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  & ::before {
+    content: "";
+    width: 90%;
+    height: 4px;
+    position: absolute;
+    display: block;
+  }
+}
+.volume__playback-button {
+  background: #626262;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+}
+
+.player__duration {
+  width: 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

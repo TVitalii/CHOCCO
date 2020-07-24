@@ -1,0 +1,51 @@
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu_768 {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343639;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_768 .menu__list {
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.menu__item {
+  margin-right: rem(25px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu_768 .menu__item {
+  margin-right: 0;
+  margin-bottom: rem(30px);
+  font-size: rem(36px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
+}

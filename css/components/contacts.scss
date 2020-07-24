@@ -1,0 +1,16 @@
+.contacts {
+  font-style: normal;
+  font-size: rem(20px);
+  color: #010101;
+}
+
+.contacts__phone {
+  color: $darkGreen;
+}
+
+.contacts__icon {
+  width: rem(13px);
+  height: rem(13px);
+  margin-right: rem(10px);
+  fill: #fff;
+}

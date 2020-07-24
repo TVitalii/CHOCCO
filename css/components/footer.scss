@@ -1,0 +1,54 @@
+.footer__content {
+  display: flex;
+  width: 95%;
+  max-width: 52.2222222222rem;
+  
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+  }
+}
+
+.address {
+  @include phones {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.address__text {
+  font-style: normal;
+  font-size: 21px;
+  color: #000;
+
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+.footer .phone-number {
+  font-style: normal;
+  color: #365a49;
+  @include phones {
+    display: flex;
+    text-align: center;
+  }
+}
+
+.footer .contacts__icon {
+  font-style: normal;
+  fill: #365a49;
+}
+
+.phone-number__text {
+  @include phones {
+    text-align: center;
+  }
+}

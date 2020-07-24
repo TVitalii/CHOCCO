@@ -1,0 +1,13 @@
+.team {
+  display: flex;
+}
+
+.team__title {
+  color: #323232;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(21px);
+  font-weight: bold;
+  margin-bottom: rem(20px);
+}

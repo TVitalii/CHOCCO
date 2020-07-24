@@ -1,0 +1,97 @@
+.accordeon {
+  position: relative;
+  background: url("../img/decor/bg_menu.jpg") center center / cover no-repeat, #000;
+  
+  &::after {
+    content: url("../img/decor/berry-raspberry.png");
+
+    position: absolute;
+    top: -5%;
+    left: 5%;
+
+    @include phones {
+      top: rem(-80px);
+      left: rem(-40px);
+    }
+  }
+}
+
+.section__title-name {
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  /* margin-bottom: 0.5555555556rem; */
+  /* text-align: left; */
+  left: 5%;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 15%;
+}
+
+.accordeon__list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__item {
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__trigger {
+  display: flex;
+  width: 100px;
+  background-position: left bottom;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 45px;
+}
+
+.accordeon__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordeon__wrap {
+  width: 0;
+  overflow: hidden;
+  transition: width 1s;
+    position: relative;
+}
+
+.active .accordeon__wrap {
+  width: 630px;
+}
+
+.accordeon__content {
+  display: flex;
+  min-width: 500px;
+  height: 100%;
+  padding: 40px 80px 45px 25px;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, 0.93);
+  color: #fff;
+  position: relative;
+}
+
+.accordeon__close {
+  position: relative;
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  right: -5%;
+}
+
+.accordeon__close-icon {
+  width: 20px;
+  height: 20px;
+
+}

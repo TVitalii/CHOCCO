@@ -1,0 +1,16 @@
+.benefits-section {
+  position: relative;
+  background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
+
+  @include tablets {
+    background-position: left top 20%;
+      background-size: 20% auto;
+  }
+
+  @include phones {
+    background: none;
+  }
+
+
+  
+}

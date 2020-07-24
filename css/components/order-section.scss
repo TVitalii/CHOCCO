@@ -1,0 +1,25 @@
+.order-section {
+  background: url("../img/decor/order-background.png") center bottom / cover no-repeat;
+
+  &:after {
+    content: url("../img/decor/leaf-form.png");
+    position: absolute;
+    bottom: rem(45px);
+    right: rem(10px);
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    bottom: rem(30px);
+    left: 2%;
+    content: url("../img/decor/berry.png");
+
+    @include tablets {
+      display: none;
+    }
+  }
+}

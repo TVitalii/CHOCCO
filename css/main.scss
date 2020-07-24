@@ -1,0 +1,47 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+//breackpoints
+$tablets: 768px;
+$phones: 480px;
+
+@import "media.scss";
+
+// normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+@import "layout.scss";
+
+// components
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/menu.scss";
+@import "components/headline.scss";
+@import "components/features.scss";
+@import "components/feature.scss";
+@import "components/btn.scss";
+@import "components/benefits.scss";
+@import "components/benefit.scss";
+@import "components/section.scss";
+@import "components/benefits-section.scss";
+@import "components/reviews.scss";
+@import "components/reviews-section.scss";
+@import "components/form.scss";
+@import "components/radio.scss";
+@import "components/order-section.scss";
+@import "components/fixed-menu.scss";
+@import "components/hamburger.scss";
+@import "components/contacts.scss";
+@import "components/slider.scss";
+@import "components/team.scss";
+@import "components/accordeon.scss";
+@import "components/modal.scss";
+@import "components/player.scss";
+@import "components/map.scss";
+@import "components/footer.scss";
+@import "components/social.scss";

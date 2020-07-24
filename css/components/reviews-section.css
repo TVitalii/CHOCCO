@@ -1,0 +1,10 @@
+.reviews-section {
+  position: relative;
+  background: url("../img/decor/berries.png") right top 57% no-repeat;
+}
+.reviews-section::before {
+  content: url("../img/decor/bars-and-berries.png");
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
