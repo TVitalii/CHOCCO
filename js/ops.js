@@ -1,4 +1,4 @@
-const section = $("section");
+const sections = $("section");
 const display = $(".maincontent");
 
 let inScroll = false;
@@ -18,7 +18,6 @@ const performTransition = (sectionEq) => {
 
     setTimeout(() => {
       inScroll = false;
-
     }, 1300);
   }
 };
@@ -38,14 +37,14 @@ const scrollViewport = (direction) => {
 };
 
 $(window).on("wheel", (e) => {
-  const deltay = e.originalEvent.deltay;
+  const deltaY = e.originalEvent.deltaY;
 
-  if (deltay > 0) {
+  if (deltaY > 0) {
     scrollViewport("next");
 
   }
 
-  if (deltay < 0) {
+  if (deltaY < 0) {
     scrollViewport("prev");
   }
 });
