@@ -17,10 +17,11 @@ const countSectionPosition = (sectionEq) => {
     console.error("передано не верное значение в countSectionPosition");
     return 0;
   }
+
   return position;
 };
 
-const changeMenuThemeSection = (sectionEq) => {
+const changeMenuThemeForSection = (sectionEq) => {
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr("data-sidemenu-theme");
   const activeClass = "fixed-menu--shadowed"
