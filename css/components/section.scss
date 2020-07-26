@@ -1,7 +1,8 @@
 .section {
 
   /*min-height: rem(800px);*/
-  height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,4 +23,5 @@
   text-align: center;
   text-transform: uppercase;
   color: #000;
+  line-height: 1.1;
 }

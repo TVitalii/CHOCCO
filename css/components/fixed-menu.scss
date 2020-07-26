@@ -2,24 +2,14 @@
   position: fixed;
   top: 30%;
   right: 3%;
+  z-index: 100;
+  color: #fff;
 
   &--shadowed {
-    position: fixed;
-    top: 30%;
-    right: 3%;
+    color: #000;
     }
 }
 
-/*
-.fixed-menu--shadowed {
-  background: #000;
-  &--active {
-    .fixed-menu__link {
-      border-color: #000;
-    }
-  }
-}
-*/
 
 .fixed-menu__item {
   margin-bottom: rem(5px);
@@ -30,7 +20,7 @@
     }
   }
 }
-
+/*
 .fixed-menu--shadowed__item {
   margin-bottom: rem(5px);
 
@@ -40,7 +30,7 @@
     }
   }
 }
-
+*/
 .fixed-menu__link {
   width: rem(16px);
   height: rem(16px);
@@ -62,7 +52,7 @@
   }
 }
 
-
+/*
 .fixed-menu--shadowed__link {
   width: rem(16px);
   height: rem(16px);
@@ -82,4 +72,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+}*/

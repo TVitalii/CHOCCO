@@ -34,7 +34,7 @@ body {
   position: relative;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   overflow: hidden;
 }
 
@@ -100,7 +100,7 @@ footer {
 .hero {
   background: url("../img/decor/branch.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
@@ -459,7 +459,8 @@ footer {
 
 .section {
   /*min-height: rem(800px);*/
-  height: 100vh;
+  height: 100%;
+  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -478,6 +479,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: #000;
+  line-height: 1.1;
 }
 
 .benefits-section {
@@ -802,23 +804,13 @@ footer {
   position: fixed;
   top: 30%;
   right: 3%;
+  z-index: 100;
+  color: #fff;
 }
 .fixed-menu--shadowed {
-  position: fixed;
-  top: 30%;
-  right: 3%;
+  color: #000;
 }
 
-/*
-.fixed-menu--shadowed {
-  background: #000;
-  &--active {
-    .fixed-menu__link {
-      border-color: #000;
-    }
-  }
-}
-*/
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
 }
@@ -826,13 +818,17 @@ footer {
   border-color: #fff;
 }
 
+/*
 .fixed-menu--shadowed__item {
-  margin-bottom: 0.2777777778rem;
-}
-.fixed-menu--shadowed__item--active .fixed-menu--shadowed__link {
-  border-color: #000;
-}
+  margin-bottom: rem(5px);
 
+  &--active {
+    .fixed-menu--shadowed__link {
+      border-color: #000;
+    }
+  }
+}
+*/
 .fixed-menu__link {
   width: 0.8888888889rem;
   height: 0.8888888889rem;
@@ -853,26 +849,27 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+/*
 .fixed-menu--shadowed__link {
-  width: 0.8888888889rem;
-  height: 0.8888888889rem;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
-  border: 0.0555555556rem solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
-}
-.fixed-menu--shadowed__link::before {
-  content: "";
-  width: 0.3333333333rem;
-  height: 0.3333333333rem;
-  border-radius: 50%;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
+  &::before {
+    content: "";
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}*/
 .hamburger {
   display: none;
   width: 1.6666666667rem;
