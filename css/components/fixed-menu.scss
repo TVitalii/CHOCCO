@@ -5,9 +5,7 @@
   z-index: 100;
   color: #fff;
 
-  &--shadowed {
-    color: #000;
-    }
+
 }
 
 
@@ -20,6 +18,7 @@
     }
   }
 }
+
 /*
 .fixed-menu--shadowed__item {
   margin-bottom: rem(5px);
@@ -49,27 +48,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &--shadowed {
+      &::before {
+        background: #000;
+      }
+    }
   }
 }
-
-/*
-.fixed-menu--shadowed__link {
-  width: rem(16px);
-  height: rem(16px);
-  border-radius: 50%;
-  border: rem(1px) solid transparent;
-  display: block;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: rem(6px);
-    height: rem(6px);
-    border-radius: 50%;
-    background: #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}*/

@@ -17,10 +17,16 @@
   z-index: 1;
 }
 
+.fixed-menu .menu_768 {
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .menu_768 .menu__list {
