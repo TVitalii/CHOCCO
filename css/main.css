@@ -38,7 +38,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .wrapper {
-    height: 0;
+    /*height: 0;*/
   }
 }
 

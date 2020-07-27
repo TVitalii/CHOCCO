@@ -33,7 +33,7 @@ body {
   overflow: hidden;
 
   @include phones {
-    height: 0;
+    /*height: 0;*/
   }
 }
 
