@@ -28,7 +28,7 @@ const closeEveryItemInContainer = container => {
   const items = container.find(".accordeon__item");
   const content = container.find(".accordeon__wrap");
 
-  items.removeClass("active");
+  items.removeClass("act");
   content.width(0);
 };
 
@@ -38,7 +38,7 @@ const opensItem = item => {
   const reqWidth = mesureWidth(item);
   const textBlock = item.find("accordeon__content");
 
-  item.addClass("active");
+  item.addClass("act");
   hiddenContent.width(reqWidth.container);
   textBlock.width(reqWidth.textContainer);
 };
@@ -48,7 +48,7 @@ $(".accordeon__trigger").on("click", e => {
 
   const $this = $(e.currentTarget);
   const item = $this.closest(".accordeon__item");
-  const itemOpened = item.hasClass("active");
+  const itemOpened = item.hasClass("act");
   const container = $this.closest(".accordeon__list");
 
   if (itemOpened) {
