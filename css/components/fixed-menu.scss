@@ -3,9 +3,6 @@
   top: 30%;
   right: 3%;
   z-index: 100;
-  color: #fff;
-
-
 }
 
 
@@ -48,11 +45,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    }
+  }
 
-    &--shadowed {
-      &::before {
-        background: #000;
-      }
+
+.fixed-menu--shadowed {
+  .fixed-menu__link {
+    &::before {
+      content: "";
+      background: #000;
+    }
+  }
+}
+
+.fixed-menu--shadowed .fixed-menu__item {
+  &--active {
+    .fixed-menu__link {
+      border-color: #000;
     }
   }
 }
