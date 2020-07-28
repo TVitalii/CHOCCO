@@ -1,8 +1,11 @@
 .fixed-menu {
   position: fixed;
-  top: 30%;
-  right: 3%;
+  top: 40%;
+  right: 5%;
   z-index: 100;
+  @include phones {
+   display: none;
+  }
 }
 
 

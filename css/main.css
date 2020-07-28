@@ -812,9 +812,14 @@ footer {
 
 .fixed-menu {
   position: fixed;
-  top: 30%;
-  right: 3%;
+  top: 40%;
+  right: 5%;
   z-index: 100;
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
@@ -1348,7 +1353,7 @@ footer {
   fill: #fff;
   width: 20px;
   height: 20px;
-  right: -5%;
+  right: -15%;
 }
 
 .accordeon__close-icon {
@@ -1511,13 +1516,13 @@ footer {
 .player__playback {
   display: flex;
   align-items: center;
-  /*width: 90%;*/
   position: relative;
   margin-right: 15px;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .player__playback {
-    width: 35%;
+    width: 100%;
   }
 }
 .player__playback::before {
